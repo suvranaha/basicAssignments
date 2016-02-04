@@ -46,7 +46,7 @@ public class WriteExcelFile {
  
  void readfile() {
  try {
- FileInputStream fstream = new FileInputStream("D:\testing.csv");
+ FileInputStream fstream = new FileInputStream("D:/testing.csv");
  DataInputStream in = new DataInputStream(fstream);
  BufferedReader br = new BufferedReader(new InputStreamReader(in));
  
@@ -56,7 +56,7 @@ public class WriteExcelFile {
  while ((strLine = br.readLine()) != null) {
  StringTokenizer st1 = new StringTokenizer(strLine, ",");
  
- List<String> l1 = new ArrayList<String>();
+ List l1 = new ArrayList();
  while (st1.hasMoreTokens()) {
  l1.add(st1.nextToken());
  }
